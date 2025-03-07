@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Rescue Centre</title>
+</head>
+<body>
+    <h1>Contact Form</h1>
+    <form action="/submit" method="post">
+        <fieldset>
+            
+            <legend>Personal Information</legend>
+            
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+    
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" inputmode="numeric"><br><br>
+    
+            <label for="outdoor_space">Do you have outdoor space?</label>
+            <input type="checkbox" id="outdoor_space" name="outdoor_space" required><br><br>
+    
+            <label for="children">Do you have children?</label>
+            <input type="checkbox" id="children" name="children"><br><br>
+    
+            <label for="other_pets">Do you have other pets?</label>
+            <input type="checkbox" id="other_pets" name="other_pets"><br><br>
+    
+            <div id="species_input" style="display: none;">
+                <label for="species">If yes, please specify the species:</label>
+                <input type="text" id="species" name="species"><br><br>
+            </div>
+    
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+
+
+
+    <!-- <script>
+        event.preventDefault();
+        // function toggleSpeciesInput() {
+        //     var otherPetsCheckbox = document.getElementById('other_pets');
+        //     var speciesInput = document.getElementById('species_input');
+        //     if (otherPetsCheckbox.checked) {
+        //         speciesInput.style.display = 'block';
+        //     } else {
+        //         speciesInput.style.display = 'none';
+        //     }
+        // }
+        function toggleChildAgeInput() {
+
+        }
+    </script> -->
+
+    <script src="main.js"></script>
+</body>
+</html>
